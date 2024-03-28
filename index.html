@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px;
+      border: none;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #eee;
+    }
+    button{
+      margin-top: 10px;
+      background-color: #aaa;
+    }
+
+    button:hover{
+      background-color: #ccc;
+
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="number" id ="tall"><label for="m">cm</label>
+  </div>
+  <div>
+    <input type="number" id ="ans"><label for="m">age</label>
+  </div>
+  <label for="m">moyen</label>
+  <input class="check" type="checkbox" name="m" value="moyen" >
+  <label for="xl">minc</label>
+  <input class="check"  type="checkbox" name="xl" value="minc">
+  <label for="xxl">larg</label>
+  <input class="check" type="checkbox" name="xxl" value="larg">
+  <button id="btn"> calc</button>
+<div id="data"></div>
+<div id="limit"></div>
+  <script src="script.js"></script>
+</body>
+</html>
